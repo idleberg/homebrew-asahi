@@ -19,7 +19,7 @@ class Nixfmt < Formula
 
     ENV["LC_ALL"] = "en_US.UTF-8"
     input_nix = "{description=\"Demo\";outputs={self}:{};}"
-    output_nix = "{\n  description =  Demo;\n  outputs = { self }: { };\n}"
+    output_nix = "{\n  description =  \"Demo\";\n  outputs = { self }: { };\n}"
 
     (testpath/"nixfmt_test.nix").write input_nix
     system bin/"nixfmt", "nixfmt_test.nix"
