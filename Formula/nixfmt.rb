@@ -15,7 +15,7 @@ class Nixfmt < Formula
   end
 
   test do
-    assert_equal "nixfmt v#{version}", shell_output("#{bin}/nixfmt --version").chomp
+    assert_equal "nixfmt #{version}", shell_output("#{bin}/nixfmt --version").chomp
 
     ENV["LC_ALL"] = "en_US.UTF-8"
     input_nix = "{description=\"Demo\";outputs={self}:{};}"
