@@ -25,7 +25,6 @@ $ brew install idleberg/asahi/<formula>
 - `dbxcli`: Command-line client for Dropbox
 - `dropboxignore`: Command-line tool for ignoring files in Dropbox
 - `krampus`: Command-line tool to kill one or more processes by their port number
-- `nixfmt`: Command-line tool to format Nix language code
 
 ## License
 
