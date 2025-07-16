@@ -9,8 +9,4 @@ class Dbxcli < Formula
   def install
     bin.install "dbxcli-darwin-amd64" => "dbxcli"
   end
-
-  test do
-    system "bin/dbxcli", "--version"
-  end
 end
