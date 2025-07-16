@@ -52,3 +52,11 @@ jobs:
           echo "Installing $file"
           brew install idleberg/asahi/$(basename ${file%.rb}) --build-from-source
         done
+
+    - name: Test Formulae
+      run: |
+        for file in ./Formula/*.rb
+        do
+          echo "Testing $file"
+          brew test $(basename ${file%.rb})
+        done
