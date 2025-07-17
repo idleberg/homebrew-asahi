@@ -9,4 +9,12 @@ class Dbxcli < Formula
   def install
     bin.install "dbxcli-darwin-amd64" => "dbxcli"
   end
+
+  test do
+    output = system "bin/dbxcli", "--help"
+    assert_match <<~EOS, output
+      Use dbxcli to quickly interact with your Dropbox, upload/download files,
+      manage your team and more. It is easy, scriptable and works on all platforms!
+    EOS
+  end
 end
