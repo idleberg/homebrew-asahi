@@ -26,6 +26,8 @@ $ brew install idleberg/asahi/<formula>
 - `dropboxignore`: Command-line tool for ignoring files in Dropbox
 - `krampus`: Command-line tool to kill one or more processes by their port number
 
+Previously contained formulas/casks are now listed in [DEPRECATED.md](DEPRECATED.md).
+
 ## License
 
 This work is licensed under [The MIT License](LICENSE).
