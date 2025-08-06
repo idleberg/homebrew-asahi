@@ -7,10 +7,26 @@
 
 ## Usage
 
-Tap this repository to install the available software:
+Any included software can be installed directly using either of these commands:
+
+```sh
+# Formulas
+$ brew install idleberg/asahi/<formula>
+
+# Casks
+$ brew install --cask idleberg/asahi/<cask>
+```
+
+Alternatively, you can tap into the repository and discard the prefixes:
 
 ```sh
 $ brew tap idleberg/asahi
+
+# Formulas
+$ brew install <formula>
+
+# Casks
+$ brew install --cask <cask>
 ```
 
 ## Software
@@ -20,37 +36,9 @@ $ brew tap idleberg/asahi
 
 ## Casks
 
-Once tapped, you can install any included cask as follows:
-
-```sh
-$ brew install --cask <cask>
-```
-
-Alternatively, you can install any cask without tapping:
-
-```sh
-$ brew install --cask idleberg/asahi/<cask>
-```
-
-The following casks are part of this repository:
-
 - `dbxcli`: Command-line client for Dropbox
 
 ### Formulas
-
-Once tapped, you can install any included cask as follows:
-
-```sh
-$ brew install <formula>
-```
-
-Alternatively, you can install any formula without tapping:
-
-```sh
-$ brew install idleberg/asahi/<formula>
-```
-
-The following formulas are part of this repository:
 
 - `dropboxignore`: Command-line tool for ignoring files in Dropbox
 - `krampus`: Command-line tool to kill one or more processes by their port number
