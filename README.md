@@ -17,7 +17,7 @@ $ brew install idleberg/asahi/<formula>
 $ brew install --cask idleberg/asahi/<cask>
 ```
 
-Alternatively, you can tap into the repository and discard the prefixes:
+Alternatively, you can "tap" into the repository, basically adding it as installation source, and discard the prefixes when installing:
 
 ```sh
 $ brew tap idleberg/asahi
