@@ -32,7 +32,7 @@ $ brew install --cask <cask>
 ## Software
 
 > [!NOTE]  
-> If you're missing a previously available formulas/casks, it's probably listed in [DEPRECATED.md](DEPRECATED.md).
+> If you're missing a previously available software, it's probably listed in [DEPRECATED.md](DEPRECATED.md).
 
 ## Casks
 
