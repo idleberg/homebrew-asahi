@@ -7,17 +7,20 @@
 
 ## Usage
 
-Tap this repository to install the available formulas:
+Tap this repository to install the available software:
 
 ```sh
 $ brew tap idleberg/asahi
+
 $ brew install <formula>
+$ brew install --cask <cask>
 ```
 
-Alternatively, you can install any packages skipping the tap step:
+Alternatively, you can install any software without tapping:
 
 ```sh
 $ brew install idleberg/asahi/<formula>
+$ brew install --cask idleberg/asahi/<cask>
 ```
 
 ## Software
