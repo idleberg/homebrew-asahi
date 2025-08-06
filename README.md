@@ -34,7 +34,7 @@ $ brew install --cask <cask>
 > [!NOTE]  
 > If you're missing a previously available software, it's probably listed in [DEPRECATED.md](DEPRECATED.md).
 
-## Casks
+### Casks
 
 - `dbxcli`: Command-line client for Dropbox
 
