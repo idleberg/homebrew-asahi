@@ -20,13 +20,19 @@ Alternatively, you can install any packages skipping the tap step:
 $ brew install idleberg/asahi/<formula>
 ```
 
-## Formulas
+## Software
+
+> [!NOTE]  
+> Previously contained formulas/casks are now listed in [DEPRECATED.md](DEPRECATED.md).
+
+### Casks
 
 - `dbxcli`: Command-line client for Dropbox
+
+### Formulas
+
 - `dropboxignore`: Command-line tool for ignoring files in Dropbox
 - `krampus`: Command-line tool to kill one or more processes by their port number
-
-Previously contained formulas/casks are now listed in [DEPRECATED.md](DEPRECATED.md).
 
 ## License
 
