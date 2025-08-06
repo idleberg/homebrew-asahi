@@ -7,24 +7,14 @@
 
 ## Usage
 
-
 > [!NOTE]  
 > Previously contained formulas/casks are now listed in [DEPRECATED.md](DEPRECATED.md).
 
 Tap this repository to install the available software:
 
 ```sh
-
-$ brew install <formula>
-$ brew install --cask <cask>
 $ brew tap idleberg/asahi
 ```
-
-Alternatively, you can install any software without tapping:
-
-```sh
-$ brew install idleberg/asahi/<formula>
-$ brew install --cask idleberg/asahi/<cask>
 ```
 
 ## Software
