@@ -1,6 +1,6 @@
 # :beer: homebrew-asahi
 
-> Unified tap to distribute my Homebrew formulas.
+> Unified tap to distribute my Homebrew formulae.
 
 [![License](https://img.shields.io/github/license/idleberg/homebrew-asahi?color=blue&style=for-the-badge)](LICENSE)
 [![Build](https://img.shields.io/github/actions/workflow/status/idleberg/homebrew-asahi/audit.yml?style=for-the-badge)](https://github.com/idleberg/homebrew-asahi/actions)
@@ -10,7 +10,7 @@
 Any included software can be installed directly using either of these commands:
 
 ```sh
-# Formulas
+# Formulae
 $ brew install idleberg/asahi/<formula>
 
 # Casks
@@ -22,7 +22,7 @@ Alternatively, you can "tap" into the repository, basically adding it as install
 ```sh
 $ brew tap idleberg/asahi
 
-# Formulas
+# Formulae
 $ brew install <formula>
 
 # Casks
@@ -38,7 +38,7 @@ $ brew install --cask <cask>
 
 - `dbxcli`: Command-line client for Dropbox
 
-### Formulas
+### Formulae
 
 - `dropboxignore`: Command-line tool for ignoring files in Dropbox
 - `krampus`: Command-line tool to kill one or more processes by their port number
