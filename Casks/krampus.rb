@@ -2,7 +2,7 @@ cask "krampus" do
   arch arm: "arm64", intel: "x86_64"
   os macos: "Darwin", linux: "Linux"
 
-  version "3.0.0"
+  version "0.2.1"
   sha256 arm:          "c3e344943c5fe31a2a048f546819121350bb6adc1138ce527156f735643ef295",
          intel:        "b1d22095850b986d8ef971432a7b5615fba6343b4c66e3b145fdcf25d9c99240",
          arm64_linux:  "cbef2459bafadbedbb2c639131465988d8c66e7d6761a7cc1138440bdc726275",
