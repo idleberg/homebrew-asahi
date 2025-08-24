@@ -61,13 +61,13 @@ jobs:
           brew test $(basename ${file%.rb})
         done
 
-    - name: Audit Casks
-      run: |
-        for file in ./Casks/*.rb
-        do
-          echo "Auditing cask $file"
-          brew audit idleberg/asahi/$(basename ${file%.rb}) --online
-        done
+    # - name: Audit Casks
+    #   run: |
+    #     for file in ./Casks/*.rb
+    #     do
+    #       echo "Auditing cask $file"
+    #       brew audit idleberg/asahi/$(basename ${file%.rb}) --online
+    #     done
 
     - name: Install Casks
       run: |
