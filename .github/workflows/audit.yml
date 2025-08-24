@@ -41,7 +41,7 @@ jobs:
       run: |
         for file in ./Formula/*.rb
         do
-          echo "Auditing $file"
+          echo "Auditing formula $file"
           brew audit idleberg/asahi/$(basename ${file%.rb}) --online
         done
 
@@ -49,14 +49,14 @@ jobs:
       run: |
         for file in ./Formula/*.rb
         do
-          echo "Installing $file"
-          brew install idleberg/asahi/$(basename ${file%.rb}) --build-from-source
+          echo "Installing formula $file"
+          brew install idleberg/asahi/$(basename ${file%.rb}) --build-from-source --formula
         done
 
     - name: Test Formulae
       run: |
         for file in ./Formula/*.rb
         do
-          echo "Testing $file"
+          echo "Testing formula $file"
           brew test $(basename ${file%.rb})
         done
