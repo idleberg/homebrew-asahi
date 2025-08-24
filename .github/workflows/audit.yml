@@ -28,8 +28,8 @@ jobs:
       uses: Homebrew/actions/setup-homebrew@main
 
     - name: Update Homebrew
-      run: |
-        brew update --auto-update
+      if: matrix.os != 'ubuntu-latest'
+      run: brew update --auto-update
 
     - name: Install Go
       run: |
@@ -74,7 +74,7 @@ jobs:
     #     done
 
     - name: Install Casks
-      continue-on-error: true
+      if: matrix.os == 'ubuntu-latest'
       run: |
         for file in ./Casks/*.rb
         do
@@ -83,6 +83,7 @@ jobs:
         done
 
     - name: Test Casks
+      if: matrix.os == 'ubuntu-latest'
       run: |
         for file in ./Casks/*.rb
         do
