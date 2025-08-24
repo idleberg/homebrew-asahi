@@ -74,7 +74,7 @@ jobs:
         for file in ./Casks/*.rb
         do
           echo "Installing cask $file"
-          brew install idleberg/asahi/$(basename ${file%.rb}) --build-from-source --cask
+          brew install idleberg/asahi/$(basename ${file%.rb}) --cask
         done
 
     - name: Test Casks
