@@ -42,7 +42,7 @@ jobs:
         for file in ./Formula/*.rb
         do
           echo "Auditing formula $file"
-          brew audit idleberg/asahi/$(basename ${file%.rb}) --online
+          brew audit idleberg/asahi/$(basename ${file%.rb}) --online --formula
         done
 
     - name: Install Formulae
