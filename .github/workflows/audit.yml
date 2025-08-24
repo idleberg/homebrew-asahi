@@ -25,8 +25,7 @@ jobs:
 
     - name: Install Homebrew
       if: matrix.os == 'ubuntu-latest'
-      run: |
-        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+      uses: Homebrew/actions/setup-homebrew@main
 
     - name: Update Homebrew
       run: |
