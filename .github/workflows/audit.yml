@@ -55,6 +55,7 @@ jobs:
         do
           echo "Installing formula $file"
           brew install idleberg/asahi/$(basename ${file%.rb}) --build-from-source --formula
+          brew cleanup
         done
 
     - name: Test Formulae
