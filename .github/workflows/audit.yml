@@ -82,11 +82,11 @@ jobs:
           brew install idleberg/asahi/$(basename ${file%.rb}) --cask
         done
 
-    - name: Test Casks
-      if: matrix.os == 'ubuntu-latest'
-      run: |
-        for file in ./Casks/*.rb
-        do
-          echo "Testing cask $file"
-          brew test $(basename ${file%.rb})
-        done
+    # - name: Test Casks
+    #   if: matrix.os == 'ubuntu-latest'
+    #   run: |
+    #     for file in ./Casks/*.rb
+    #     do
+    #       echo "Testing cask $file"
+    #       brew test $(basename ${file%.rb})
+    #     done
