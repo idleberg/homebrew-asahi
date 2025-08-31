@@ -4,7 +4,6 @@ class Txiki < Formula
   url "https://github.com/saghul/txiki.js.git",
       tag:      "v24.12.0",
       revision: "793dd9d8bb1d54726ca4e7af1d951418e199175f"
-  sha256 "6ede6d543bffa60afa5fabf64d27a5465054e36505a1cb3ba8307a6fa3dc89c6"
   license "MIT"
 
   depends_on "autoconf" => :build
