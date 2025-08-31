@@ -42,6 +42,7 @@ $ brew install --cask <cask>
 
 - `dropboxignore`: Command-line tool for ignoring files in Dropbox
 - `krampus`: Command-line tool to kill one or more processes by their port number
+- `txiki`: A tiny JavaScript runtime
 
 ## License
 
