@@ -7,9 +7,9 @@ class Txiki < Formula
   sha256 "6ede6d543bffa60afa5fabf64d27a5465054e36505a1cb3ba8307a6fa3dc89c6"
   license "MIT"
 
-  depends_on "cmake" => :build
   depends_on "autoconf" => :build
   depends_on "automake" => :build
+  depends_on "cmake" => :build
   depends_on "libtool" => :build
   depends_on "texinfo" => :build
 
