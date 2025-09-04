@@ -16,7 +16,7 @@ class Normcap < Formula
     prefix.install "build/normcap/mac/app/Normcap.app"
   end
 
-  test dong tested: `system bin/"program", "do", "something"`.
+  test do
     system "false"
   end
 end
