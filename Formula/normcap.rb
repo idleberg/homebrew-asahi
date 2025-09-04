@@ -12,7 +12,7 @@ class Normcap < Formula
   depends_on :macos
 
   def install
-    system "uv", "run", "poe", "build"
+    system "uv", "run", "poe", "bundle"
     prefix.install "build/normcap/mac/app/Normcap.app"
   end
 
