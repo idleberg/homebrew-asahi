@@ -7,7 +7,7 @@ cask "normcap" do
 
   url "https://github.com/dynobo/normcap/releases/download/v#{version}/NormCap-#{version}-#{arch}-macOS.dmg"
   name "NormCap"
-  desc "OCR-powered screenshot tool to capture text instead of images."
+  desc "OCR-powered screenshot tool to capture text instead of images"
   homepage "https://dynobo.github.io/normcap/"
 
   depends_on macos: ">= :ventura"

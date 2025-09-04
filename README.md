@@ -21,11 +21,19 @@ Alternatively, you can "tap" into the repository, basically adding it as install
 
 ```sh
 $ brew tap idleberg/asahi
+```
+### Formulae
 
-# Formulae
+```sh
 $ brew install <formula>
+```
 
-# Casks
+### Casks
+
+> [!IMPORTANT]  
+> Apple requires apps to be notarized, hence you might need to pass `--no-quarantine` to install some of these casks.
+
+```sh
 $ brew install --cask <cask>
 ```
 
@@ -37,12 +45,12 @@ $ brew install --cask <cask>
 ### Casks
 
 - `dbxcli`: Command-line client for Dropbox
+- `NormCap`: OCR-powered screenshot tool to capture text instead of images
 
 ### Formulae
 
 - `dropboxignore`: Command-line tool for ignoring files in Dropbox
 - `krampus`: Command-line tool to kill one or more processes by their port number
-- `txiki`: A tiny JavaScript runtime
 
 ## License
 
