@@ -6,7 +6,7 @@ cask "normcap" do
          intel: "de620d4bd4b9db0f24fc354f9db29a87ae32c0ccc6ff63cbb34456d175ff0e5e"
 
   url "https://github.com/dynobo/normcap/releases/download/v#{version}/NormCap-#{version}-#{arch}-macOS.dmg"
-  name "8x8_work"
+  name "NormCap"
   desc "Communications application with voice, video, chat, and web conferencing"
   homepage "https://www.8x8.com/products/apps"
 
