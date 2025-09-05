@@ -15,5 +15,5 @@ cask "dbxcli" do
   depends_on arch: :x86_64
   depends_on macos: ">= :el_capitan"
 
-  binary "dbxcli-#{os}-#{arch}", target: "dbxcli"
+  binary "dbxcli-darwin-amd64", target: "dbxcli"
 end
