@@ -1,12 +1,8 @@
 cask "dbxcli" do
-  arch intel: "amd64"
-  os macos: "darwin", linux: "linux"
-
   version "3.0.0"
-  sha256 x86_64:       "1149a2aa6a89829c6d540d04cc1db8cf5bb27e3d8b0ec6b32d830a6818bd7573",
-         x86_64_linux: "3ff6e29675095063a5ba7101115cf7f809f3deddf14998ac61bf7a0330d736cb"
+  sha256 "1149a2aa6a89829c6d540d04cc1db8cf5bb27e3d8b0ec6b32d830a6818bd7573"
 
-  url "https://github.com/dropbox/dbxcli/releases/download/v#{version}/dbxcli-#{os}-#{arch}"
+  url "https://github.com/dropbox/dbxcli/releases/download/v#{version}/dbxcli-darwin-amd64"
   name "dbxcli"
   desc "Command-line client for Dropbox"
   homepage "https://github.com/dropbox/dbxcli"
@@ -17,6 +13,7 @@ cask "dbxcli" do
   end
 
   depends_on arch: :x86_64
+  depends_on macos: ">= :el_capitan"
 
   binary "dbxcli-#{os}-#{arch}", target: "dbxcli"
 end
