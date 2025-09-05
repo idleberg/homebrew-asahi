@@ -16,4 +16,8 @@ cask "dbxcli" do
   depends_on macos: ">= :el_capitan"
 
   binary "dbxcli-darwin-amd64", target: "dbxcli"
+
+  caveats do
+    requires_rosetta
+  end
 end
