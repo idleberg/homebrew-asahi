@@ -14,7 +14,7 @@ cask "dbxcli" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :yosemite"
+  depends_on macos: ">= :el_capitan"
 
   caveats do
     requires_rosetta
