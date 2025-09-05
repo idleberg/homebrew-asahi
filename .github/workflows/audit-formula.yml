@@ -1,0 +1,66 @@
+name: Audit & Install Formulae
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+    - '.github/workflows/*'
+    - 'Formula/**'
+  workflow_dispatch:
+
+jobs:
+  audit:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [macos-latest, ubuntu-latest]
+
+    steps:
+    - uses: actions/checkout@9bb56186c3b09b4f86b1c65136769dd318469633 # v4.1.2
+      with:
+        fetch-depth: 1
+
+    - name: Install Homebrew
+      if: matrix.os == 'ubuntu-latest'
+      uses: Homebrew/actions/setup-homebrew@main
+
+    - name: Update Homebrew
+      if: matrix.os != 'ubuntu-latest'
+      run: brew update --auto-update
+
+    - name: Install Go
+      run: |
+        brew uninstall --force go@1.21
+        brew cleanup -s go@1.21
+        brew cleanup --prune-prefix
+        brew install --force go
+
+    - name: Tap Repository
+      run: brew tap idleberg/asahi
+
+    - name: Audit Formulae
+      run: |
+        for file in ./Formula/*.rb
+        do
+          echo "Auditing formula $file"
+          brew audit idleberg/asahi/$(basename ${file%.rb}) --online --formula
+        done
+
+    - name: Install Formulae
+      run: |
+        for file in ./Formula/*.rb
+        do
+          echo "Installing formula $file"
+          brew install idleberg/asahi/$(basename ${file%.rb}) --build-from-source --formula
+          brew cleanup --prune=all
+        done
+
+    - name: Test Formulae
+      run: |
+        for file in ./Formula/*.rb
+        do
+          echo "Testing formula $file"
+          brew test $(basename ${file%.rb})
+        done

@@ -1,4 +1,4 @@
-name: Audit & Install Formulae
+name: Audit & Install Casks
 
 on:
   push:
@@ -7,7 +7,6 @@ on:
     paths:
     - '.github/workflows/*'
     - 'Casks/**'
-    - 'Formula/**'
   workflow_dispatch:
 
 jobs:
@@ -41,38 +40,13 @@ jobs:
     - name: Tap Repository
       run: brew tap idleberg/asahi
 
-    - name: Audit Formulae
+    - name: Audit Casks
       run: |
-        for file in ./Formula/*.rb
+        for file in ./Casks/*.rb
         do
-          echo "Auditing formula $file"
-          brew audit idleberg/asahi/$(basename ${file%.rb}) --online --formula
+          echo "Auditing cask $file"
+          brew audit idleberg/asahi/$(basename ${file%.rb}) --online
         done
-
-    - name: Install Formulae
-      run: |
-        for file in ./Formula/*.rb
-        do
-          echo "Installing formula $file"
-          brew install idleberg/asahi/$(basename ${file%.rb}) --build-from-source --formula
-          brew cleanup --prune=all
-        done
-
-    - name: Test Formulae
-      run: |
-        for file in ./Formula/*.rb
-        do
-          echo "Testing formula $file"
-          brew test $(basename ${file%.rb})
-        done
-
-    # - name: Audit Casks
-    #   run: |
-    #     for file in ./Casks/*.rb
-    #     do
-    #       echo "Auditing cask $file"
-    #       brew audit idleberg/asahi/$(basename ${file%.rb}) --online
-    #     done
 
     - name: Install Casks
       if: matrix.os == 'ubuntu-latest'
