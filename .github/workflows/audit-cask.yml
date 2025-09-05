@@ -50,7 +50,6 @@ jobs:
         done
 
     - name: Install Casks
-      if: matrix.os == 'ubuntu-latest'
       continue-on-error: true
       run: |
         for file in ./Casks/*.rb
