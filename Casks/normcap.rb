@@ -10,6 +10,11 @@ cask "normcap" do
   desc "OCR-powered screenshot tool to capture text instead of images"
   homepage "https://dynobo.github.io/normcap/"
 
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
+
   depends_on macos: ">= :ventura"
 
   app "NormCap.app"

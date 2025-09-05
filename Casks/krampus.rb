@@ -13,6 +13,11 @@ cask "krampus" do
   desc "Command-line tool to kill one or more processes by their port number"
   homepage "https://github.com/idleberg/krampus"
 
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
+
   binary "krampus"
 
   postflight do
