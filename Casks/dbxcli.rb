@@ -12,4 +12,8 @@ cask "dbxcli" do
   homepage "https://github.com/dropbox/dbxcli"
 
   binary "dbxcli-#{os}-#{arch}", target: "dbxcli"
+
+  caveats do
+    requires_rosetta
+  end
 end
