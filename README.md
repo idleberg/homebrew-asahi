@@ -30,9 +30,6 @@ $ brew install <formula>
 
 ### Casks
 
-> [!IMPORTANT]  
-> Apple requires apps to be notarized, hence you might need to pass `--no-quarantine` to install some of these casks.
-
 ```sh
 $ brew install --cask <cask>
 ```
