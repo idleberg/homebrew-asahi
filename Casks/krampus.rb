@@ -21,11 +21,13 @@ cask "krampus" do
   binary "krampus"
 
   postflight do
-    args = %W[
-      -d com.apple.quarantine
-      #{staged_path}/krampus
-    ]
+    on_macos do
+      args = %W[
+        -d com.apple.quarantine
+        #{staged_path}/krampus
+      ]
 
-    system_command "xattr", args: args
+      system_command "xattr", args: args
+    end
   end
 end
