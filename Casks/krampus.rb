@@ -14,4 +14,13 @@ cask "krampus" do
   homepage "https://github.com/idleberg/krampus"
 
   binary "krampus"
+
+  postflight do
+    args = %W[
+      -d com.apple.quarantine
+      #{staged_path}/krampus
+    ]
+
+    system_command "xattr", args: args
+  end
 end
