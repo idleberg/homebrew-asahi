@@ -42,7 +42,7 @@ $ brew install --cask <cask>
 ### Casks
 
 - `dbxcli`: Command-line client for Dropbox
-- `NormCap`: OCR-powered screenshot tool to capture text instead of images
+- `normcap`: OCR-powered screenshot tool to capture text instead of images
 
 ### Formulae
 
