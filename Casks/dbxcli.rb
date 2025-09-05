@@ -16,6 +16,15 @@ cask "dbxcli" do
 
   depends_on macos: ">= :el_capitan"
 
+  postflight do
+    args = %W[
+      -d com.apple.quarantine
+      #{staged_path}/dbxcli
+    ]
+
+    system_command "xattr", args: args
+  end
+
   caveats do
     requires_rosetta
   end
