@@ -22,4 +22,9 @@ cask "normcap" do
 
     system_command "xattr", args: args
   end
+
+  zap trash: [
+    "~/Library/Preferences/com.normcap.settings.plist",
+    "~/Library/Preferences/eu.dynobo.normcap.plist",
+  ]
 end
