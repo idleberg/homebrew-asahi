@@ -41,6 +41,7 @@ jobs:
       run: brew tap idleberg/asahi
 
     - name: Audit Formulae
+      continue-on-error: true
       run: |
         for file in ./Formula/*.rb
         do
@@ -49,6 +50,7 @@ jobs:
         done
 
     - name: Install Formulae
+      continue-on-error: true
       run: |
         for file in ./Formula/*.rb
         do

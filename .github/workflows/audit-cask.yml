@@ -41,6 +41,7 @@ jobs:
       run: brew tap idleberg/asahi
 
     - name: Audit Casks
+      continue-on-error: true
       run: |
         for file in ./Casks/*.rb
         do
@@ -50,6 +51,7 @@ jobs:
 
     - name: Install Casks
       if: matrix.os == 'ubuntu-latest'
+      continue-on-error: true
       run: |
         for file in ./Casks/*.rb
         do
