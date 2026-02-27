@@ -19,6 +19,15 @@ cask "cleansi" do
 
   app "Cleansi.app"
 
+  postflight do
+    args = %W[
+      -dr com.apple.quarantine
+      #{staged_path}/Cleansi.app
+    ]
+
+    system_command "xattr", args: args
+  end
+
   zap trash: [
     "~/Library/Preferences/org.idleberg.Cleansi.plist",
   ]
