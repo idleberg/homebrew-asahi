@@ -1,8 +1,8 @@
 class Krampus < Formula
   desc "Command-line tool to kill one or more processes by their port number"
   homepage "https://github.com/idleberg/krampus"
-  url "https://github.com/idleberg/krampus/archive/refs/tags/v0.2.1.tar.gz"
-  sha256 "e4a6a92940c38ebd8f483ef23a4364d5f9f5fe8713e364e6bb60d2297a48085f"
+  url "https://github.com/idleberg/krampus/archive/refs/tags/v0.3.0.tar.gz"
+  sha256 "3c326730c8b228898e1c08c80888d9f11a46f66efe708fda796b3e7f7285e510"
   license "MIT"
   head "https://github.com/idleberg/krampus.git", branch: "main"
 
