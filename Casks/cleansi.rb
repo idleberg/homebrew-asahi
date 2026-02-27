@@ -2,8 +2,8 @@ cask "cleansi" do
   arch arm: "arm64", intel: "x86_64"
 
   version "0.6.3"
-  sha256 arm:   "46b0c40afca96c12ed25dd12be839a2f6a29b6865ce058a3c5b994cd05ea0fb8",
-         intel: "66941162d832a29fad1bd1524aead4ad2e2bf354375d348d6b933610060f3c8e"
+  sha256 arm:   "66941162d832a29fad1bd1524aead4ad2e2bf354375d348d6b933610060f3c8e",
+         intel: "46b0c40afca96c12ed25dd12be839a2f6a29b6865ce058a3c5b994cd05ea0fb8"
 
   url "https://github.com/idleberg/cleansi/releases/download/v#{version}/Cleansi-v#{version}-#{arch}.zip"
   name "Cleansi"
