@@ -1,6 +1,6 @@
 # :beer: homebrew-asahi
 
-> Unified tap to distribute my Homebrew formulae.
+> Unified tap to distribute my apps (and some others) on Homebrew.
 
 [![License](https://img.shields.io/github/license/idleberg/homebrew-asahi?color=blue&style=for-the-badge)](LICENSE)
 [![Build](https://img.shields.io/github/actions/workflow/status/idleberg/homebrew-asahi/audit-formula.yml?style=for-the-badge)](https://github.com/idleberg/homebrew-asahi/actions)
