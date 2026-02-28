@@ -31,10 +31,6 @@ jobs:
       if: matrix.os != 'ubuntu-latest'
       run: brew update --auto-update
 
-    - name: Enable Rosetta 2
-      if: matrix.os != 'ubuntu-latest'
-      run: softwareupdate --install-rosetta --agree-to-license
-
     - name: Install Go
       run: |
         brew uninstall --force go@1.21
