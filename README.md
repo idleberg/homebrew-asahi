@@ -41,6 +41,7 @@ $ brew install --cask <cask>
 
 ### Casks
 
+- `cleansi`: Removes sharing IDs and other tracking parameters from URLs
 - `dbxcli`: Command-line client for Dropbox
 - `normcap`: OCR-powered screenshot tool to capture text instead of images
 
