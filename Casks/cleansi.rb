@@ -29,6 +29,6 @@ cask "cleansi" do
   end
 
   zap trash: [
-    "~/Library/Preferences/org.idleberg.Cleansi.plist",
+    "~/Library/Preferences/com.idleberg.Cleansi.plist",
   ]
 end
