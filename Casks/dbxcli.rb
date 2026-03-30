@@ -12,7 +12,6 @@ cask "dbxcli" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :el_capitan"
   depends_on arch: :x86_64
 
   binary "dbxcli-darwin-amd64", target: "dbxcli"
