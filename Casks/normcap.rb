@@ -20,8 +20,8 @@ cask "normcap" do
 
   app "NormCap.app"
 
-  postflight do
-    on_macos do
+  on_macos do
+    postflight do
       args = %W[
         -d com.apple.quarantine
         #{staged_path}/NormCap.app
