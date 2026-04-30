@@ -6,12 +6,13 @@ class Dent < Formula
   license "MIT"
   head "https://github.com/idleberg/node-dent-cli.git", branch: "main"
 
-  depends_on "bun" => :build
+  depends_on "deno" => :build
 
   def install
-    system "bun", "install", "--frozen-lockfile"
-    target = "bun-#{OS.kernel_name.downcase}-#{Hardware::CPU.arm? ? "arm64" : "x64"}-modern"
-    system "bun", "build", "src/main.ts", "--compile", "--target=#{target}", "--outfile=dent"
+    system "deno", "install"
+    arch = Hardware::CPU.arm? ? "aarch64" : "x86_64"
+    target = OS.mac? ? "#{arch}-apple-darwin" : "#{arch}-unknown-linux-gnu"
+    system "deno", "compile", "--allow-all", "--target=#{target}", "--output=dent", "src/main.ts"
     bin.install "dent"
   end
 
