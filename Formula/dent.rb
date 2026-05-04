@@ -6,10 +6,11 @@ class Dent < Formula
   license "MIT"
   head "https://github.com/idleberg/node-dent-cli.git", branch: "main"
 
-  depends_on "oven-sh/bun/bun" => :build
+  depends_on "deno" => :build
 
   def install
-    system "bun", "build", "--compile", "--outfile=#{bin}/dent", "src/main.ts"
+    system "deno", "install"
+    system "deno", "compile", "--allow-all", "--output=#{bin}/dent", "src/main.ts"
   end
 
   test do
