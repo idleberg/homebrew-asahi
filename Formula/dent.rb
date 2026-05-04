@@ -9,11 +9,7 @@ class Dent < Formula
   depends_on "deno" => :build
 
   def install
-    system "deno", "install"
-    arch = Hardware::CPU.arm? ? "aarch64" : "x86_64"
-    target = OS.mac? ? "#{arch}-apple-darwin" : "#{arch}-unknown-linux-gnu"
-    system "deno", "compile", "--allow-all", "--target=#{target}", "--output=dent", "src/main.ts"
-    bin.install "dent"
+    system "deno", "compile", "--allow-all", "--output=#${bin/"dent"}", "src/main.ts"
   end
 
   test do
