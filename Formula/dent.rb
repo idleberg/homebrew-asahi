@@ -10,7 +10,7 @@ class Dent < Formula
 
   def install
     system "deno", "compile", "--allow-all", "--output=#{bin}/dent", "src/main.ts"
-  end
+  endrm
 
   test do
     assert_match version.to_s, shell_output("#{bin}/dent --version")
