@@ -9,7 +9,7 @@ class Dent < Formula
   depends_on "deno" => :build
 
   def install
-    system "deno", "compile", "--allow-all", "--output=#{bin}/dent", "src/main.ts"
+    system "deno", "compile", "--allow-all", "--output=#{bin/"dent"}", "src/main.ts"
   end
 
   test do
