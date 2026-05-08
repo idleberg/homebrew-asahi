@@ -10,7 +10,10 @@ class Dropboxignore < Formula
   depends_on "grep"
 
   def install
-    # Do not use 'make install' as it uses hardcoded destination
+    lib.install "src/lib/commands", "src/lib/modules"
+    inreplace "src/bin/cli.sh" do |s|
+      s.gsub! /if \[.*?fi\n/m, "LIB_PATH=\"#{lib}\"\n"
+    end
     bin.install "src/bin/cli.sh" => "dropboxignore"
   end
 
