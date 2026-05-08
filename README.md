@@ -49,6 +49,7 @@ $ brew install --cask <cask>
 
 - `dent`: Opinionated formatter for NSIS scripts
 - `dropboxignore`: Command-line tool for ignoring files in Dropbox
+- `hashman`: Command-line tool to calculate multiple checksums at once
 - `krampus`: Command-line tool to kill one or more processes by their port number
 
 ## License
