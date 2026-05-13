@@ -1,8 +1,8 @@
 class Dent < Formula
   desc "Opinionated code formatter for NSIS scripts"
   homepage "https://github.com/idleberg/node-dent-cli"
-  url "https://github.com/idleberg/node-dent-cli/archive/refs/tags/v0.5.1.tar.gz"
-  sha256 "982f4187b74cbd4d83ef915774e0b35dc7fe3d484b8eef551039eb510de5118e"
+  url "https://github.com/idleberg/node-dent-cli/archive/refs/tags/v0.6.0.tar.gz"
+  sha256 "e2649a3b1d1097bd5937fa957649e99262d925fedd6b5e81a1f3dedfefe95b2c"
   license "MIT"
   head "https://github.com/idleberg/node-dent-cli.git", branch: "main"
 
