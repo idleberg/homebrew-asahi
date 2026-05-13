@@ -47,8 +47,8 @@ $ brew install --cask <cask>
 
 ### Formulae
 
-- `ardent`: Opinionated formatter for NSIS scripts
-- `dent`: Opinionated formatter for NSIS scripts
+- `ardent`: Opinionated formatter for NSIS scripts (Rust)
+- `dent`: Opinionated formatter for NSIS scripts (TypeScript)
 - `dropboxignore`: Command-line tool for ignoring files in Dropbox
 - `hashman`: Command-line tool to calculate multiple checksums at once
 - `krampus`: Command-line tool to kill one or more processes by their port number
