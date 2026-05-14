@@ -13,6 +13,6 @@ class Hashman < Formula
   end
 
   test do
-    assert_equal "v#{version}", shell_output("#{bin}/hashman --version").chomp
+    assert_equal "hashman version #{version}", shell_output("#{bin}/hashman --version").chomp
   end
 end
