@@ -11,28 +11,17 @@ on:
 
 jobs:
   audit:
-    runs-on: ${{ matrix.os }}
-
-    strategy:
-      fail-fast: false
-      matrix:
-        os: [macos-latest, ubuntu-latest]
+    runs-on: macos-latest
 
     steps:
     - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
       with:
         fetch-depth: 1
 
-    - name: Install Homebrew
-      if: matrix.os == 'ubuntu-latest'
-      uses: Homebrew/actions/setup-homebrew@main
-
     - name: Update Homebrew
-      if: matrix.os != 'ubuntu-latest'
       run: brew update --auto-update
 
     - name: Enable Rosetta 2
-      if: matrix.os != 'ubuntu-latest'
       run: softwareupdate --install-rosetta --agree-to-license
 
     - name: Install Go
@@ -64,7 +53,6 @@ jobs:
         done
 
     # - name: Test Casks
-    #   if: matrix.os == 'ubuntu-latest'
     #   run: |
     #     for file in ./Casks/*.rb
     #     do
