@@ -7,7 +7,7 @@ cask "io" do
 
   url "https://github.com/idleberg/io/releases/download/v#{version}/io-v#{version}-#{arch}.zip"
   name "io"
-  desc "Menu bar utility that routes audio from a selected input device to a selected output device"
+  desc "Menu bar utility that routes audio"
   homepage "https://github.com/idleberg/io"
 
   livecheck do
