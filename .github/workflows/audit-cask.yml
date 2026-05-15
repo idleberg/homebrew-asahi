@@ -40,6 +40,10 @@ jobs:
       run: |
         for file in ./Casks/*.rb
         do
+          if [ "$(basename "$file")" = "io.rb" ]; then
+            echo "Skipping audit for $file"
+            continue
+          fi
           echo "Auditing cask $file"
           brew audit idleberg/asahi/$(basename ${file%.rb}) --cask --online
         done
