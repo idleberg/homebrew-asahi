@@ -13,6 +13,6 @@ class Ardent < Formula
   end
 
   test do
-    assert_equal "ardent v#{version}", shell_output("#{bin}/ardent --version").chomp
+    assert_equal "ardent #{version}", shell_output("#{bin}/ardent --version").chomp
   end
 end
