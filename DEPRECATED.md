@@ -5,5 +5,6 @@ Previous versions of this tap contained bottles that have since been removed or 
 ## Migrated
 
 - `alejandra` => [New Formula](https://formulae.brew.sh/formula/alejandra)
+- `dent` => use `ardent` instead
 - `nixfmt` => [New Formula](https://formulae.brew.sh/formula/nixfmt)
 - `scdl` => [New Formula](https://formulae.brew.sh/formula/scdl)
