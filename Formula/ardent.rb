@@ -1,8 +1,8 @@
 class Ardent < Formula
   desc "Opinionated formatter for NSIS scripts"
   homepage "https://github.com/idleberg/ardent"
-  url "https://github.com/idleberg/ardent/archive/refs/tags/v0.4.0.tar.gz"
-  sha256 "35ceb8fae6a8998ff9aeb32d7daf1915bfbe4299b539bf311e2520e6f3b2fcc0"
+  url "https://github.com/idleberg/ardent/archive/refs/tags/v0.5.0.tar.gz"
+  sha256 "ac7805fabf7dc790c59dba851f38db3d6427fe7e3cbfe619ce24f57ccbc85e86"
   license "MIT"
   head "https://github.com/idleberg/ardent.git", branch: "main"
 
@@ -14,5 +14,8 @@ class Ardent < Formula
 
   test do
     assert_equal "ardent #{version}", shell_output("#{bin}/ardent --version").chomp
+
+    (testpath/"test.nsi").write "section\nNOP\nsectionend"
+    assert_equal "Section\n\tNop\nSectionEnd\n", shell_output("#{bin}/ardent format #{testpath}/test.nsi")
   end
 end
