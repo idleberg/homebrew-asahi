@@ -13,20 +13,16 @@ class NsisLsp < Formula
   end
 
   test do
-    json = <<~JSON
-      {
-        "jsonrpc": "2.0",
-        "id": 1,
-        "method": "initialize",
-        "params": {
-          "rootUri": null,
-          "capabilities": {}
-        }
-      }
-    JSON
+    init = { jsonrpc: "2.0", id: 1, method: "initialize", params: { rootUri: nil, capabilities: {} } }
+    shutdown = { jsonrpc: "2.0", id: 2, method: "shutdown" }
+    exit_msg = { jsonrpc: "2.0", method: "exit" }
 
-    input = "Content-Length: #{json.size}\r\n\r\n#{json}"
+    input = [init, shutdown, exit_msg].map { |msg|
+      json = msg.to_json
+      "Content-Length: #{json.size}\r\n\r\n#{json}"
+    }.join
+
     output = pipe_output(bin/"nsis-lsp", input)
-    assert_match "jsonrpc", output
+    assert_match "completionProvider", output
   end
 end
