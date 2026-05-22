@@ -17,10 +17,10 @@ class NsisLsp < Formula
     shutdown = { jsonrpc: "2.0", id: 2, method: "shutdown" }
     exit_msg = { jsonrpc: "2.0", method: "exit" }
 
-    input = [init, shutdown, exit_msg].map { |msg|
+    input = [init, shutdown, exit_msg].map do |msg|
       json = msg.to_json
       "Content-Length: #{json.size}\r\n\r\n#{json}"
-    }.join
+    end.join
 
     output = pipe_output(bin/"nsis-lsp", input)
     assert_match "completionProvider", output
