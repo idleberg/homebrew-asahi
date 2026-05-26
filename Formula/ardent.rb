@@ -3,7 +3,7 @@ class Ardent < Formula
   homepage "https://github.com/idleberg/ardent"
   url "https://github.com/idleberg/ardent/archive/refs/tags/v0.8.0.tar.gz"
   sha256 "a96188e131d44f23c696a36e6597e0f002b6e1c6413834457b075495f3242256"
-  license "MIT"
+  license any_of: ["Apache-2.0", "MIT"]
   head "https://github.com/idleberg/ardent.git", branch: "main"
 
   depends_on "cmake" => :build
