@@ -3,7 +3,7 @@ class NsisLsp < Formula
   homepage "https://github.com/idleberg/nsis-lsp"
   url "https://github.com/idleberg/nsis-lsp/archive/refs/tags/v0.4.0.tar.gz"
   sha256 "6e2f6008c35b6e0211006fb1741f14e7f2c7b120e125ff0a61e3d6da83ca51f3"
-  license "MIT"
+  license any_of: ["Apache-2.0", "MIT"]
   head "https://github.com/idleberg/nsis-lsp.git", branch: "main"
 
   depends_on "rust" => :build
