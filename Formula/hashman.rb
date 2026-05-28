@@ -1,8 +1,8 @@
 class Hashman < Formula
   desc "Command-line tool to calculate multiple checksums at once"
   homepage "https://github.com/idleberg/hashman"
-  url "https://github.com/idleberg/hashman/archive/refs/tags/v0.2.1.tar.gz"
-  sha256 "e46caad27a86fee5c98b92d5ea63791b5252e7acaa86be9851cbd1424daddd57"
+  url "https://github.com/idleberg/hashman/archive/refs/tags/v0.2.2.tar.gz"
+  sha256 "f94f1d74906088323c34be8e6ee4aebe68a69536c362f77bfbe71f7c7633a72e"
   license "MIT"
   head "https://github.com/idleberg/hashman.git", branch: "main"
 
