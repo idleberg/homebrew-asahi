@@ -50,6 +50,8 @@ jobs:
         done
 
     - name: Install Formulae
+      env:
+        npm_config_min_release_age: 0
       run: |
         for file in ./Formula/*.rb
         do
