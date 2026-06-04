@@ -13,6 +13,9 @@ jobs:
   audit:
     runs-on: macos-latest
 
+    env:
+      HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}
+
     steps:
     - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
       with:
@@ -43,8 +46,6 @@ jobs:
       run: brew tap idleberg/asahi
 
     - name: Audit Casks
-      env:
-        HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}
       run: |
         for file in ./Casks/*.rb
         do
