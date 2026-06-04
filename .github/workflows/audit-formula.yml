@@ -68,7 +68,6 @@ jobs:
           echo "Installing formula $file"
           brew install idleberg/asahi/$(basename ${file%.rb}) --build-from-source --formula
         done
-        brew cleanup --prune=all
 
     - name: Test Formulae
       run: |
@@ -77,3 +76,6 @@ jobs:
           echo "Testing formula $file"
           brew test $(basename ${file%.rb})
         done
+
+    - name: Cleanup
+      run: brew cleanup --prune=all

@@ -71,3 +71,6 @@ jobs:
     #       echo "Testing cask $file"
     #       brew test $(basename ${file%.rb})
     #     done
+
+    - name: Cleanup
+      run: brew cleanup --prune=all
