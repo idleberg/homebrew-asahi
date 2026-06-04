@@ -18,6 +18,14 @@ jobs:
       with:
         fetch-depth: 1
 
+    - name: Cache Homebrew downloads
+      uses: actions/cache@5a3ec84eff668545956fd18022155c47e93e2684 # v4.2.3
+      with:
+        path: ~/Library/Caches/Homebrew
+        key: homebrew-${{ runner.os }}-${{ hashFiles('Casks/**') }}
+        restore-keys: |
+          homebrew-${{ runner.os }}-
+
     - name: Update Homebrew
       run: brew update --auto-update
 
