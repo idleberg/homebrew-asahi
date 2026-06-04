@@ -15,14 +15,14 @@ class Dent < Formula
   depends_on "node"
 
   def install
-    args = std_npm_args
-
-    # Skip --min-release-age in our CI to allow testing freshly published releases
-    if ENV["CI"] && ENV["GITHUB_REPOSITORY"] == "idleberg/homebrew-asahi"
-      args.reject! { |a| a.start_with?("--min-release-age") }
+    # Override --min-release-age in our CI to allow testing freshly published releases
+    ci_args = if ENV["CI"] && ENV["GITHUB_REPOSITORY"] == "idleberg/homebrew-asahi"
+      ["--min-release-age=0"]
+    else
+      []
     end
 
-    system "npm", "install", *args
+    system "npm", "install", *std_npm_args, *ci_args
     bin.install_symlink Dir[libexec/"bin/*"]
   end
 
