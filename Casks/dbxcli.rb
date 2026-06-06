@@ -5,7 +5,7 @@ cask "dbxcli" do
   url "https://github.com/dropbox/dbxcli/releases/download/v#{version}/dbxcli-darwin-amd64"
   name "dbxcli"
   desc "Command-line client for Dropbox"
-  homepage "https://github.com/dropbox/dbxcli"
+  homepage "https://github.com/dropbox/dbxcli/"
 
   livecheck do
     url :url

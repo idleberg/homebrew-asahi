@@ -8,14 +8,14 @@ cask "io" do
   url "https://github.com/idleberg/io/releases/download/v#{version}/io-v#{version}-#{arch}.zip"
   name "io"
   desc "Menu bar utility that routes audio"
-  homepage "https://github.com/idleberg/io"
+  homepage "https://github.com/idleberg/io/"
 
   livecheck do
     url :url
     strategy :github_latest
   end
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "io.app"
 

@@ -6,7 +6,7 @@ cask "normcap" do
          intel: "de620d4bd4b9db0f24fc354f9db29a87ae32c0ccc6ff63cbb34456d175ff0e5e"
 
   url "https://github.com/dynobo/normcap/releases/download/v#{version}/NormCap-#{version}-#{arch}-macOS.dmg",
-      verified: "github.com/dynobo/normcap"
+      verified: "github.com/dynobo/normcap/"
   name "NormCap"
   desc "OCR-powered screenshot tool to capture text instead of images"
   homepage "https://dynobo.github.io/normcap/"
@@ -16,7 +16,7 @@ cask "normcap" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :big_sur"
+  depends_on macos: :big_sur
 
   app "NormCap.app"
 

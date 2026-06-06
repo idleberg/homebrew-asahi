@@ -8,14 +8,14 @@ cask "cleansi" do
   url "https://github.com/idleberg/cleansi/releases/download/v#{version}/Cleansi-v#{version}-#{arch}.zip"
   name "Cleansi"
   desc "Removes sharing IDs and other tracking parameters from URLs"
-  homepage "https://github.com/idleberg/cleansi"
+  homepage "https://github.com/idleberg/cleansi/"
 
   livecheck do
     url :url
     strategy :github_latest
   end
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "Cleansi.app"
 
