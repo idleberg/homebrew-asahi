@@ -1,8 +1,8 @@
 class Wgv < Formula
   desc "Cross-platform winget manifest validator"
   homepage "https://github.com/idleberg/wgv"
-  url "https://github.com/idleberg/wgv/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "b0353aa59c1969b6d166cd60843e3b8014cf0314074b4dd485ba24023971a41f"
+  url "https://github.com/ideberg/wgv/archive/refs/tags/v0.1.1.tar.gz"
+  sha256 "d97671c65dda17a27d1de59359c36124249b2308cd22d26d9e159d1ab9e6f5a1"
   license "MIT"
   head "https://github.com/idleberg/wgv.git", branch: "main"
 
@@ -14,6 +14,8 @@ class Wgv < Formula
   end
 
   test do
+    assert_equal "ardent #{version}", shell_output("#{bin}/wgv --version").chomp
+
     (testpath/"Test.Example.yaml").write <<~YAML
       # yaml-language-server: $schema=https://aka.ms/winget-manifest.singleton.1.10.0.schema.json
       PackageIdentifier: Test.Example
