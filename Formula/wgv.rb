@@ -34,6 +34,6 @@ class Wgv < Formula
           Silent: /S
           SilentWithProgress: /S
     YAML
-    assert_match "succeeded", shell_output("#{bin}/wgv #{testpath}/Test.Example.yaml")
+    assert_match "succeeded", shell_output("#{bin}/wgv #{testpath}/Test.Example.yaml 2>&1")
   end
 end
