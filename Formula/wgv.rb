@@ -15,6 +15,7 @@ class Wgv < Formula
 
   test do
     (testpath/"Test.Example.yaml").write <<~YAML
+      # yaml-language-server: $schema=https://aka.ms/winget-manifest.singleton.1.10.0.schema.json
       PackageIdentifier: Test.Example
       PackageVersion: "1.0.0"
       PackageLocale: en-US
