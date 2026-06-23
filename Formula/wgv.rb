@@ -1,8 +1,8 @@
 class Wgv < Formula
   desc "Cross-platform winget manifest validator"
   homepage "https://github.com/idleberg/wgv"
-  url "https://github.com/idleberg/wgv/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "874ac312aeafc9a6d6d45bc8ba5a46ea1f0735bb9db0abe51a416c91e56777ed"
+  url "https://github.com/idleberg/wgv/archive/refs/tags/v0.2.1.tar.gz"
+  sha256 "af56bcc01bfdb9fdeea0c448fc9cc0741fb1ec10cf532af04bd8bbe8c78d576c"
   license "MIT"
   head "https://github.com/idleberg/wgv.git", branch: "main"
 
