@@ -14,7 +14,7 @@ class Wgv < Formula
   end
 
   test do
-    assert_equal "ardent #{version}", shell_output("#{bin}/wgv --version").chomp
+    assert_equal "wgv #{version}", shell_output("#{bin}/wgv --version").chomp
 
     (testpath/"Test.Example.yaml").write <<~YAML
       # yaml-language-server: $schema=https://aka.ms/winget-manifest.singleton.1.10.0.schema.json
