@@ -16,7 +16,9 @@ class Wgv < Formula
   test do
     assert_equal "wgv #{version}", shell_output("#{bin}/wgv --version").chomp
 
-    (testpath/"Test.Example.yaml").write <<~YAML
+    manifest_dir = testpath/"manifests"
+    manifest_dir.mkpath
+    (manifest_dir/"Test.Example.yaml").write <<~YAML
       # yaml-language-server: $schema=https://aka.ms/winget-manifest.singleton.1.10.0.schema.json
       PackageIdentifier: Test.Example
       PackageVersion: "1.0.0"
@@ -36,6 +38,6 @@ class Wgv < Formula
           Silent: /S
           SilentWithProgress: /S
     YAML
-    assert_match "succeeded", shell_output("#{bin}/wgv #{testpath}/Test.Example.yaml 2>&1")
+    assert_match "succeeded", shell_output("#{bin}/wgv #{manifest_dir}/Test.Example.yaml 2>&1")
   end
 end
