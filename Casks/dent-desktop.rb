@@ -1,6 +1,6 @@
 cask "dent-desktop" do
-  version "0.1.0"
-  sha256  "adaed3ff9989ada035daf584e931d1f251225f768d85d738dc48afc457546b10"
+  version "0.2.0"
+  sha256  "d24235fe428fc28538a44452807c345e3af54fa4bbd7025b94aba023a2557c43"
 
   url "https://github.com/idleberg/dent-desktop/releases/download/v#{version}/dent-#{version}-darwin.zip"
   name "Dent"
