@@ -24,4 +24,10 @@ cask "dent-desktop" do
 
     system_command "xattr", args: args
   end
+
+  zap trash: [
+    "~/Library/Application Support/org.idleberg.dent",
+    "~/Library/Caches/org.idleberg.dent",
+    "~/Library/WebKit/org.idleberg.dent",
+  ]
 end
