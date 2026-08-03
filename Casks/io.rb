@@ -1,9 +1,9 @@
 cask "io" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "0.1.1"
-  sha256 arm:   "f2366a1ca6e78cb41863ea1c7313c0034730277439735a749c20b8d8e08a4ef1",
-         intel: "b539b85de41e1dee897035c114e5b4a4e44594ca61d1f85076825b5cd8c9b087"
+  version "0.1.2"
+  sha256 arm:   "13816899b036d38d46f50a4eb95db3667b02e8a48f2f5d5da3339d4b48cf7d1b",
+         intel: "9a7e3b526c107207fe405263a712ea95c6598794303c024a77ab9f1be5c7ed42"
 
   url "https://github.com/idleberg/io/releases/download/v#{version}/io-v#{version}-#{arch}.zip"
   name "io"
