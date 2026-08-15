@@ -1,8 +1,8 @@
 class Dent < Formula
   desc "Opinionated code formatter for NSIS scripts"
   homepage "https://github.com/idleberg/dent"
-  url "https://registry.npmjs.org/@nsis/dent-cli/-/dent-cli-0.10.0.tgz"
-  sha256 "5055f7035d90d7c4e1ec4ade0a6127cda4a92a22d70816294690844c8f0d9d34"
+  url "https://registry.npmjs.org/@nsis/dent-cli/-/dent-cli-0.10.1.tgz"
+  sha256 "10870f722a8f06a4e68b230f34afe68492e2078ff16465adf7e64d00ee11766c"
   license "MIT"
 
   livecheck do
