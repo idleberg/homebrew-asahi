@@ -1,8 +1,8 @@
 class Ardent < Formula
   desc "Opinionated formatter for NSIS scripts"
   homepage "https://github.com/idleberg/ardent"
-  url "https://github.com/idleberg/ardent/archive/refs/tags/v0.12.0.tar.gz"
-  sha256 "9a1e68c51397b1d4c83e8bfa9fe8fbf1937a4aec840b55700959117206d30232"
+  url "https://github.com/idleberg/ardent/archive/refs/tags/v0.12.1.tar.gz"
+  sha256 "8d581325c8f5c6e6684c7fbd6e49c7532a2387ff0002c8820c054d815d91394f"
   license "MIT"
   head "https://github.com/idleberg/ardent.git", branch: "main"
 
