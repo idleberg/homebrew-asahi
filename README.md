@@ -41,17 +41,18 @@ $ brew install --cask <cask>
 
 ### Casks
 
-- `cleansi`: Removes sharing IDs and other tracking parameters from URLs
-- `io`: Menu bar utility that routes audio
-- `normcap`: OCR-powered screenshot tool to capture text instead of images
+- [Cleansi](https://github.com/idleberg/cleansi): Removes sharing IDs and other tracking parameters from URLs
+- [io](https://github.com/idleberg/io): Menu bar utility that routes audio
+- [NormCap](https://dynobo.github.io/normcap/): OCR-powered screenshot tool to capture text instead of images
 
 ### Formulae
 
-- `ardent`: Opinionated formatter for NSIS scripts
-- `dropboxignore`: Command-line tool for ignoring files in Dropbox
-- `hashman`: Command-line tool to calculate multiple checksums at once
-- `krampus`: Command-line tool to kill one or more processes by their port number
-- `nsis-lsp`: Opinionated language server for NSIS
+- [`ardent`](https://github.com/idleberg/ardent): Opinionated formatter for NSIS scripts
+- [`dropboxignore`](https://github.com/sp1thas/dropboxignore): Command-line tool for ignoring files in Dropbox
+- [`hashman`](https://github.com/idleberg/go-hashman): Command-line tool to calculate multiple checksums at once
+- [`krampus`](https://github.com/idleberg/krampus): Command-line tool to kill one or more processes by their port number
+- [`nsis-lsp`](https://github.com/idleberg/nsis-lsp): Opinionated language server for NSIS
+- [`pklenv`](https://github.com/idleberg/pklenv): Typed, cascading environment config
 
 ## License
 
