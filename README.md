@@ -53,6 +53,7 @@ $ brew install --cask <cask>
 - [`krampus`](https://github.com/idleberg/krampus): Command-line tool to kill one or more processes by their port number
 - [`nsis-lsp`](https://github.com/idleberg/nsis-lsp): Opinionated language server for NSIS
 - [`pklenv`](https://github.com/idleberg/pklenv): Typed, cascading environment config
+- [`wgv`](https://github.com/idleberg/wgv): Cross-platform WinGet manifest validator
 
 ## License
 
