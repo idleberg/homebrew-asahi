@@ -1,8 +1,8 @@
 class NsisLsp < Formula
   desc "Opinionated language server for NSIS"
   homepage "https://github.com/idleberg/nsis-lsp"
-  url "https://github.com/idleberg/nsis-lsp/archive/refs/tags/v0.5.2.tar.gz"
-  sha256 "10786734a538c3dc9e486c1f805c60823cdd62da253691e66c567943b22ac248"
+  url "https://github.com/idleberg/nsis-lsp/archive/refs/tags/v0.5.3.tar.gz"
+  sha256 "195251887405d2f0b3759bc0865563d68d08eeb22c6053c35feea55654226fc3"
   license any_of: ["Apache-2.0", "MIT"]
   head "https://github.com/idleberg/nsis-lsp.git", branch: "main"
 
