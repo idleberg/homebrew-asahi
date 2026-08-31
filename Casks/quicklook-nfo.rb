@@ -1,9 +1,9 @@
 cask "quicklook-nfo" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "0.0.0"
-  sha256 arm:   "6da4e35b2a65fcef84e78f8287a3dcd40a1a552e820aeeb8574a890c3023b5b1",
-         intel: "d34d45b3c54bbea24acf00141252bca2209caf2831b08f2c57c8959765a50eab"
+  version "0.1.0"
+  sha256 arm:   "2c8ebba9cd35fc6f6298c4d2ac9187fafdea743ecf2b1763fa161a6b377474d9",
+         intel: "0f3939e72005fd6cd55671f22583243d941f0f4de12ebbf8ffc7daee23de84a5"
 
   url "https://github.com/idleberg/quicklook-nfo/releases/download/v#{version}/quicklook-nfo-v#{version}-#{arch}.zip"
   name "Quicklook NFO"
