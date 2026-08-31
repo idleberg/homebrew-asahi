@@ -44,6 +44,7 @@ $ brew install --cask <cask>
 - [Cleansi](https://github.com/idleberg/cleansi): Removes sharing IDs and other tracking parameters from URLs
 - [io](https://github.com/idleberg/io): Menu bar utility that routes audio
 - [NormCap](https://dynobo.github.io/normcap/): OCR-powered screenshot tool to capture text instead of images
+- [Quicklook NFO](https://github.com/idleberg/quicklook-nfo): A modern, configurable Quicklook plugin for NFO/DIZ files
 
 ### Formulae
 
