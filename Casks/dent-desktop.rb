@@ -4,7 +4,7 @@ cask "dent-desktop" do
 
   url "https://github.com/idleberg/dent-desktop/releases/download/v#{version}/dent-#{version}-darwin.zip"
   name "Dent"
-  desc "A desktop application for dent, the opinionated NSIS code formatter."
+  desc "Desktop application for dent, the opinionated NSIS code formatter"
   homepage "https://github.com/idleberg/dent-desktop/"
 
   livecheck do

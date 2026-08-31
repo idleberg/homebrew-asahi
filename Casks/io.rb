@@ -28,7 +28,5 @@ cask "io" do
     system_command "xattr", args: args
   end
 
-  zap trash: [
-    "~/Library/Preferences/com.idleberg.io.plist",
-  ]
+  zap trash: "~/Library/Preferences/com.idleberg.io.plist"
 end

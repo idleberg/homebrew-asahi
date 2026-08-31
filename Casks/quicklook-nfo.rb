@@ -7,7 +7,7 @@ cask "quicklook-nfo" do
 
   url "https://github.com/idleberg/quicklook-nfo/releases/download/v#{version}/quicklook-nfo-v#{version}-#{arch}.zip"
   name "Quicklook NFO"
-  desc "A modern, configurable Quicklook plugin for NFO/DIZ files"
+  desc "Modern, configurable Quicklook plugin for NFO/DIZ files"
   homepage "https://github.com/idleberg/quicklook-nfo/"
 
   livecheck do

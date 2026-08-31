@@ -28,7 +28,5 @@ cask "cleansi" do
     system_command "xattr", args: args
   end
 
-  zap trash: [
-    "~/Library/Preferences/com.idleberg.Cleansi.plist",
-  ]
+  zap trash: "~/Library/Preferences/com.idleberg.Cleansi.plist"
 end
