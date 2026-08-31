@@ -20,12 +20,7 @@ cask "quicklook-nfo" do
   app "Quicklook NFO.app"
 
   postflight do
-    args = %W[
-      -dr com.apple.quarantine
-      #{staged_path}/Quicklook NFO.app
-    ]
-
-    system_command "xattr", args: args
+    system_command "xattr", args: ["-dr", "com.apple.quarantine", "#{appdir}/Quicklook NFO.app"]
 
     # macOS registers the embedded QuickLook extension only once the containing
     # app has been launched.
