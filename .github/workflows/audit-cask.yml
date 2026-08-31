@@ -45,6 +45,9 @@ jobs:
     - name: Tap Repository
       run: brew tap idleberg/asahi
 
+    - name: Style Casks
+      run: brew style ./Casks
+
     - name: Audit Casks
       run: |
         for file in ./Casks/*.rb

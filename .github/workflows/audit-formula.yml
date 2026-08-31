@@ -54,6 +54,9 @@ jobs:
     - name: Tap Repository
       run: brew tap idleberg/asahi
 
+    - name: Style Formulae
+      run: brew style ./Formula
+
     - name: Audit Formulae
       run: |
         for file in ./Formula/*.rb
