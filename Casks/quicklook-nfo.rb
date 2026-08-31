@@ -1,10 +1,13 @@
 cask "quicklook-nfo" do
-  version "0.0.0"
-  sha256 "6da4e35b2a65fcef84e78f8287a3dcd40a1a552e820aeeb8574a890c3023b5b1"
+  arch arm: "arm64", intel: "x86_64"
 
-  url "https://github.com/idleberg/quicklook-nfo/releases/download/v#{version}/quicklook-nfo-v#{version}.zip"
+  version "0.0.0"
+  sha256 arm:   "6da4e35b2a65fcef84e78f8287a3dcd40a1a552e820aeeb8574a890c3023b5b1",
+         intel: "d34d45b3c54bbea24acf00141252bca2209caf2831b08f2c57c8959765a50eab"
+
+  url "https://github.com/idleberg/quicklook-nfo/releases/download/v#{version}/quicklook-nfo-v#{version}-#{arch}.zip"
   name "quicklook-nfo"
-  desc "QuickLook extension for CP437 ASCII/ANSI-art .nfo and .diz files"
+  desc "A modern, configurable Quicklook plugin for NFO/DIZ files"
   homepage "https://github.com/idleberg/quicklook-nfo/"
 
   livecheck do
