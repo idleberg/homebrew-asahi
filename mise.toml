@@ -1,0 +1,50 @@
+[tools]
+ruby = "3.4"
+actionlint = "latest"
+hk = "latest"
+pkl = "latest"
+
+[env]
+HK_MISE = 1
+
+[hooks]
+postinstall = "hk install --mise"
+
+[tasks.style]
+description = "Lint casks and formulae (RuboCop via brew)"
+run = "brew style ./Casks ./Formula"
+
+[tasks.audit]
+description = "Audit all casks and formulae like CI does"
+run = """
+set -e
+brew tap idleberg/asahi
+for file in ./Casks/*.rb; do
+  name=$(basename "${file%.rb}")
+  [ "$name" = "io" ] && continue
+  echo "==> Auditing cask $name"
+  brew audit --cask --online --strict "idleberg/asahi/$name"
+done
+for file in ./Formula/*.rb; do
+  name=$(basename "${file%.rb}")
+  echo "==> Auditing formula $name"
+  brew audit --formula --online --strict "idleberg/asahi/$name"
+done
+"""
+
+[tasks.test]
+description = "Install and test every formula (destructive: installs packages)"
+run = """
+set -e
+for file in ./Formula/*.rb; do
+  name=$(basename "${file%.rb}")
+  echo "==> Installing $name"
+  brew install --formula --build-from-source "idleberg/asahi/$name"
+  echo "==> Testing $name"
+  brew test "$name"
+done
+"""
+
+[tasks.ci]
+description = "Everything CI runs, minus the installs"
+depends = ["style", "audit"]
