@@ -1,8 +1,8 @@
 class Clark < Formula
   desc "CLI for clark, the Rust port of Bombshell's clack prompts"
   homepage "https://github.com/idleberg/clark"
-  url "https://github.com/idleberg/clark/archive/refs/tags/clark-cli-0.1.0.tar.gz"
-  sha256 "f5ac3caeb09c8e551f24d8202803ad3309358254e7935408b1fde448fd2c4859"
+  url "https://github.com/idleberg/clark/archive/refs/tags/clark-cli-0.2.0.tar.gz"
+  sha256 "66e1e26dda856b10ff8b0b7fdc3a32940fcaada8dfd449dc362e58b6ea11d81c"
   license "MIT"
   head "https://github.com/idleberg/clark.git", branch: "main"
 
