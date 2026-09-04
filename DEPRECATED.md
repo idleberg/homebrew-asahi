@@ -8,3 +8,4 @@ Previous versions of this tap contained bottles that have since been removed or 
 - `dbxcli` => [New Formula](https://formulae.brew.sh/formula/dbxcli)
 - `nixfmt` => [New Formula](https://formulae.brew.sh/formula/nixfmt)
 - `scdl` => [New Formula](https://formulae.brew.sh/formula/scdl)
+- `tgrep` => [New Formula](https://formulae.brew.sh/formula/tgrep)
