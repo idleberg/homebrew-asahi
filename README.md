@@ -42,6 +42,7 @@ $ brew install --cask <cask>
 ### Casks
 
 - [Cleansi](https://github.com/idleberg/cleansi): Removes sharing IDs and other tracking parameters from URLs
+- [Dent Desktop](https://github.com/idleberg/dent-desktop): Desktop application for dent, the opinionated NSIS code formatter
 - [io](https://github.com/idleberg/io): Menu bar utility that routes audio
 - [NormCap](https://dynobo.github.io/normcap/): OCR-powered screenshot tool to capture text instead of images
 - [Quicklook NFO](https://github.com/idleberg/quicklook-nfo): A modern, configurable Quicklook plugin for NFO/DIZ files
@@ -49,6 +50,7 @@ $ brew install --cask <cask>
 ### Formulae
 
 - [`ardent`](https://github.com/idleberg/ardent): Opinionated formatter for NSIS scripts
+- [`clark`](https://github.com/idleberg/clark): CLI for clark, the Rust port of Bombshell's clack prompts
 - [`dropboxignore`](https://github.com/sp1thas/dropboxignore): Command-line tool for ignoring files in Dropbox
 - [`hashman`](https://github.com/idleberg/go-hashman): Command-line tool to calculate multiple checksums at once
 - [`krampus`](https://github.com/idleberg/krampus): Command-line tool to kill one or more processes by their port number
