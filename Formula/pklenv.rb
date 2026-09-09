@@ -1,8 +1,8 @@
 class Pklenv < Formula
   desc "Typed, cascading environment config backed by Pkl"
   homepage "https://github.com/idleberg/pklenv"
-  url "https://github.com/idleberg/pklenv/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "e05b2f1ea7ed6a7a6085fbd17102c3cdcfbe2937bf7092eee5853dd63879323a"
+  url "https://github.com/idleberg/pklenv/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "aa8ccdfba5e5699640fb200cff4d808ac2543ff5ea967d4eeb59f8b1232590d8"
   license any_of: ["Apache-2.0", "MIT"]
   head "https://github.com/idleberg/pklenv.git", branch: "main"
 
