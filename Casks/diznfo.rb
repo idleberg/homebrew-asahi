@@ -2,8 +2,8 @@ cask "diznfo" do
   arch arm: "arm64", intel: "x86_64"
 
   version "0.2.0"
-  sha256 arm:   "9014eb70e7b0f7f18b97d46e6ef0c102bbaa2596cb01e1895134816cd511797c",
-         intel: "8bbd107ae2723114068aeec26fd8493b22a684e81f07097bdc8f6c330d7bcda8"
+  sha256 arm:   "ae00c5521ac99cffa23c284bec44b23cf993a9038f43368c006a255d1a94d078",
+         intel: "58f50c7627a9e8f1f60b44d8ba5c54157cdc566cd9b13e065102db96f506beac"
 
   url "https://github.com/idleberg/diznfo/releases/download/v#{version}/diznfo-v#{version}-#{arch}.zip"
   name "Quicklook NFO"
