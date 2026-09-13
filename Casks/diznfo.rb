@@ -1,7 +1,7 @@
 cask "diznfo" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "0.1.0"
+  version "0.2.0"
   sha256 arm:   "9014eb70e7b0f7f18b97d46e6ef0c102bbaa2596cb01e1895134816cd511797c",
          intel: "8bbd107ae2723114068aeec26fd8493b22a684e81f07097bdc8f6c330d7bcda8"
 
