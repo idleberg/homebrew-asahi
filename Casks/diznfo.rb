@@ -1,14 +1,14 @@
-cask "quicklook-nfo" do
+cask "diznfo" do
   arch arm: "arm64", intel: "x86_64"
 
   version "0.1.0"
-  sha256 arm:   "2c8ebba9cd35fc6f6298c4d2ac9187fafdea743ecf2b1763fa161a6b377474d9",
-         intel: "0f3939e72005fd6cd55671f22583243d941f0f4de12ebbf8ffc7daee23de84a5"
+  sha256 arm:   "9014eb70e7b0f7f18b97d46e6ef0c102bbaa2596cb01e1895134816cd511797c",
+         intel: "8bbd107ae2723114068aeec26fd8493b22a684e81f07097bdc8f6c330d7bcda8"
 
-  url "https://github.com/idleberg/quicklook-nfo/releases/download/v#{version}/quicklook-nfo-v#{version}-#{arch}.zip"
+  url "https://github.com/idleberg/diznfo/releases/download/v#{version}/diznfo-v#{version}-#{arch}.zip"
   name "Quicklook NFO"
-  desc "Modern, configurable Quicklook plugin for NFO/DIZ files"
-  homepage "https://github.com/idleberg/quicklook-nfo/"
+  desc "Modern, configurable viewer and Quicklook plugin for NFO/DIZ files"
+  homepage "https://github.com/idleberg/diznfo/"
 
   livecheck do
     url :url
