@@ -22,12 +22,6 @@ cask "diznfo" do
   postflight_steps do
     run "/usr/bin/xattr", args:           ["-dr", "com.apple.quarantine", "{{appdir}}/Diznfo.app"],
                           writable_paths: ["{{appdir}}/Diznfo.app"]
-
-    run "/usr/bin/pluginkit", args: ["-a", "{{appdir}}/Diznfo.app/Contents/PlugIns/DiznfoExtension.appex"]
-  end
-
-  uninstall_preflight_steps do
-    run "/usr/bin/pluginkit", args: ["-r", "{{appdir}}/Diznfo.app/Contents/PlugIns/DiznfoExtension.appex"]
   end
 
   uninstall quit: "com.idleberg.Diznfo"
