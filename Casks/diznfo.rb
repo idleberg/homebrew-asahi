@@ -1,9 +1,9 @@
 cask "diznfo" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "0.2.2"
-  sha256 arm:   "e426f6bc2c185c864ff79ca371c926f38ee5b294e4cd69d6024ed0c6aa77d816",
-         intel: "9e8c917374fda489662212815068a18935a611097ac97598778fcd95fa1be35e"
+  version "0.3.0"
+  sha256 arm:   "2947116530478074257dc6c174663ce1ce97fd189eab0cffd16775d664cfb493",
+         intel: "91bcbc231bbf96d9e0edd797d50f56c764a3bf77f088b8b5ec88a6c641df10d7"
 
   url "https://github.com/idleberg/diznfo/releases/download/v#{version}/diznfo-v#{version}-#{arch}.zip"
   name "Diznfo"
