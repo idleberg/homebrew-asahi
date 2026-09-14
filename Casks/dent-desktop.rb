@@ -16,13 +16,9 @@ cask "dent-desktop" do
 
   app "Dent.app"
 
-  postflight do
-    args = %W[
-      -dr com.apple.quarantine
-      #{staged_path}/Dent.app
-    ]
-
-    system_command "xattr", args: args
+  postflight_steps do
+    run "/usr/bin/xattr", args:           ["-dr", "com.apple.quarantine", "{{appdir}}/Dent.app"],
+                          writable_paths: ["{{appdir}}/Dent.app"]
   end
 
   zap trash: [

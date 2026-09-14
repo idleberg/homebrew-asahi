@@ -19,13 +19,9 @@ cask "io" do
 
   app "io.app"
 
-  postflight do
-    args = %W[
-      -dr com.apple.quarantine
-      #{staged_path}/io.app
-    ]
-
-    system_command "xattr", args: args
+  postflight_steps do
+    run "/usr/bin/xattr", args:           ["-dr", "com.apple.quarantine", "{{appdir}}/io.app"],
+                          writable_paths: ["{{appdir}}/io.app"]
   end
 
   zap trash: "~/Library/Preferences/com.idleberg.io.plist"
