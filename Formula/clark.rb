@@ -1,8 +1,8 @@
 class Clark < Formula
   desc "CLI for clark, the Rust port of Bombshell's clack prompts"
   homepage "https://github.com/idleberg/clark"
-  url "https://github.com/idleberg/clark/archive/refs/tags/clark-cli-0.2.0.tar.gz"
-  sha256 "66e1e26dda856b10ff8b0b7fdc3a32940fcaada8dfd449dc362e58b6ea11d81c"
+  url "https://github.com/idleberg/clark/archive/refs/tags/clark-cli-v0.3.0.tar.gz"
+  sha256 "4d6117337026f4b7606e022f60a64ddb6fa45a27b0c353faa33aafff72b0f956"
   license "MIT"
   head "https://github.com/idleberg/clark.git", branch: "main"
 
@@ -10,6 +10,7 @@ class Clark < Formula
 
   def install
     system "cargo", "install", *std_cargo_args(path: "crates/clark-cli")
+    generate_completions_from_executable(bin/"clark", "--completions")
   end
 
   test do
