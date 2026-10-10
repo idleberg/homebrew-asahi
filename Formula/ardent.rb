@@ -1,8 +1,8 @@
 class Ardent < Formula
   desc "Opinionated formatter for NSIS scripts"
   homepage "https://idleberg.github.io/ardent/"
-  url "https://github.com/idleberg/ardent/archive/refs/tags/v0.16.0.tar.gz"
-  sha256 "2e78b74782e2170ecfe03c705224e7e64e635a96b84f180e07ee2fbeeb30b12d"
+  url "https://github.com/idleberg/ardent/archive/refs/tags/v0.17.0.tar.gz"
+  sha256 "7af6ece524c3ffbba3ffd5f10a40eb91ce99d39373772e8038b2c07689672d8a"
   license "MIT"
   head "https://github.com/idleberg/ardent.git", branch: "main"
 
@@ -11,7 +11,7 @@ class Ardent < Formula
 
   def install
     system "cargo", "install", *std_cargo_args
-    generate_completions_from_executable(bin/"ardent", "completions")
+    generate_completions_from_executable(bin/"ardent", "--completions")
   end
 
   test do
