@@ -46,6 +46,7 @@ $ brew install --cask <cask>
 - [Diznfo](https://github.com/idleberg/quicklook-nfo): Modern, configurable viewer and Quicklook plugin for NFO/DIZ files
 - [io](https://github.com/idleberg/io): Menu bar utility that routes audio
 - [QuickLook NSIS](https://github.com/idleberg/quicklook-nsis): QuickLook preview for NSIS scripts
+- [QuickLook Svelte](https://github.com/idleberg/quicklook-svelte): QuickLook preview for Svelte components
 
 ### Formulae
 

@@ -14,19 +14,19 @@ cask "quicklook-dev" do
 
   depends_on macos: :sonoma
 
-  app "QuickLook Svelte.app"
+  app "QuickLook Dev.app"
 
   postflight_steps do
-    run "/usr/bin/xattr", args:           ["-dr", "com.apple.quarantine", "{{appdir}}/QuickLook Svelte.app"],
-                          writable_paths: ["{{appdir}}/QuickLook Svelte.app"]
+    run "/usr/bin/xattr", args:           ["-dr", "com.apple.quarantine", "{{appdir}}/QuickLook Dev.app"],
+                          writable_paths: ["{{appdir}}/QuickLook Dev.app"]
   end
 
-  uninstall quit: "com.idleberg.QuickLookSvelte"
+  uninstall quit: "com.idleberg.QuickLookDev"
 
   zap trash: [
-    "~/Library/Application Scripts/com.idleberg.QuickLookSvelte.Extension",
-    "~/Library/Containers/com.idleberg.QuickLookSvelte.Extension",
-    "~/Library/Preferences/com.idleberg.QuickLookSvelte.plist",
-    "~/Library/Saved Application State/com.idleberg.QuickLookSvelte.savedState",
+    "~/Library/Application Scripts/com.idleberg.QuickLookDev.Extension",
+    "~/Library/Containers/com.idleberg.QuickLookDev.Extension",
+    "~/Library/Preferences/com.idleberg.QuickLookDev.plist",
+    "~/Library/Saved Application State/com.idleberg.QuickLookDev.savedState",
   ]
 end
