@@ -32,7 +32,7 @@ cask "quicklook-dev" do
 
   caveats do
     <<~EOS
-      You must start #{appdir}/QuickLook Dev.app once manually to setup the Quick Look plugin.
+      You must start `#{appdir}/QuickLook Dev.app` manually to setup the Quick Look plugin.
     EOS
   end
 end

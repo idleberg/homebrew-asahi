@@ -32,7 +32,7 @@ cask "quicklook-svelte" do
 
   caveats do
     <<~EOS
-      You must start #{appdir}/QuickLook Svelte.app once manually to setup the Quick Look plugin.
+      You must start `#{appdir}/QuickLook Svelte.app` manually to setup the Quick Look plugin.
     EOS
   end
 end

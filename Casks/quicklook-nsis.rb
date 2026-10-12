@@ -32,7 +32,7 @@ cask "quicklook-nsis" do
 
   caveats do
     <<~EOS
-      You must start #{appdir}/QuickLook NSIS.app once manually to setup the Quick Look plugin.
+      You must start `#{appdir}/QuickLook NSIS.app` manually to setup the Quick Look plugin.
     EOS
   end
 end
