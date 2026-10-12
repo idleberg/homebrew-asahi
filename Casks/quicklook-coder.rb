@@ -1,6 +1,6 @@
 cask "quicklook-coder" do
-  version "0.1.1"
-  sha256 "68de7a51540657ec2c7de890ee74659e5e6975a0a612e905c6c7e8480742eb3b"
+  version "0.1.2"
+  sha256 "b1aa885defeb447146401e76bd760f4354b02173f96448678a6a8bdd3ddd1c17"
 
   url "https://github.com/idleberg/quicklook-coder/releases/download/v#{version}/Quick-Look-Coder-v#{version}.zip"
   name "Quick Look Coder"
