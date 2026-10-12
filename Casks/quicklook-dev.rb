@@ -29,4 +29,10 @@ cask "quicklook-dev" do
     "~/Library/Preferences/com.idleberg.QuickLookDev.plist",
     "~/Library/Saved Application State/com.idleberg.QuickLookDev.savedState",
   ]
+
+  caveats do
+    <<~EOS
+      You must start #{appdir}/QuickLook Dev.app once manually to setup the Quick Look plugin.
+    EOS
+  end
 end

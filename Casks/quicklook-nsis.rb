@@ -29,4 +29,10 @@ cask "quicklook-nsis" do
     "~/Library/Preferences/com.idleberg.QuickLookNSIS.plist",
     "~/Library/Saved Application State/com.idleberg.QuickLookNSIS.savedState",
   ]
+
+  caveats do
+    <<~EOS
+      You must start #{appdir}/QuickLook NSIS.app once manually to setup the Quick Look plugin.
+    EOS
+  end
 end

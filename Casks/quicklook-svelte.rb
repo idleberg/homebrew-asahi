@@ -29,4 +29,10 @@ cask "quicklook-svelte" do
     "~/Library/Preferences/com.idleberg.QuickLookSvelte.plist",
     "~/Library/Saved Application State/com.idleberg.QuickLookSvelte.savedState",
   ]
+
+  caveats do
+    <<~EOS
+      You must start #{appdir}/QuickLook Svelte.app once manually to setup the Quick Look plugin.
+    EOS
+  end
 end
