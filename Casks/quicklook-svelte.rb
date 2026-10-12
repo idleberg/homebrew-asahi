@@ -2,7 +2,7 @@ cask "quicklook-svelte" do
   version "0.1.1"
   sha256 "56a951a56af6b18b201e6b9d53f7e1422b4d45c71dfabc8ed221ef24f7501b4e"
 
-  url "https://github.com/idleberg/quicklook-svelte/releases/download/v#{version}/QuickLook-Svelte-v#{version}.zip"
+  url "https://github.com/idleberg/quicklook-svelte/releases/download/v#{version}/Quick-Look-Svelte-v#{version}.zip"
   name "Quick Look Svelte"
   desc "Quick Look preview for Svelte components"
   homepage "https://github.com/idleberg/quicklook-svelte/"
