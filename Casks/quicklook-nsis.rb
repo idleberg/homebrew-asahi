@@ -1,10 +1,10 @@
 cask "quicklook-nsis" do
-  version "0.1.0"
-  sha256 "82393bee8747bde7bc7aeb29979b627430f62ab10b9073f6c909dc6ace680ba4"
+  version "0.1.1"
+  sha256 "15d3d493f1056e1fc198380c765496f3b3315c4aa2cf7569a7d8ed922d294dfd"
 
   url "https://github.com/idleberg/quicklook-nsis/releases/download/v#{version}/QuickLook-NSIS-v#{version}.zip"
-  name "QuickLook NSIS"
-  desc "QuickLook preview for NSIS scripts"
+  name "Quick Look NSIS"
+  desc "Quick Look preview for NSIS scripts"
   homepage "https://github.com/idleberg/quicklook-nsis/"
 
   livecheck do
@@ -14,11 +14,11 @@ cask "quicklook-nsis" do
 
   depends_on macos: :sonoma
 
-  app "QuickLook NSIS.app"
+  app "Quick Look NSIS.app"
 
   postflight_steps do
-    run "/usr/bin/xattr", args:           ["-dr", "com.apple.quarantine", "{{appdir}}/QuickLook NSIS.app"],
-                          writable_paths: ["{{appdir}}/QuickLook NSIS.app"]
+    run "/usr/bin/xattr", args:           ["-dr", "com.apple.quarantine", "{{appdir}}/Quick Look NSIS.app"],
+                          writable_paths: ["{{appdir}}/Quick Look NSIS.app"]
   end
 
   uninstall quit: "com.idleberg.QuickLookNSIS"
@@ -32,7 +32,7 @@ cask "quicklook-nsis" do
 
   caveats do
     <<~EOS
-      You must start `#{appdir}/QuickLook NSIS.app` manually to setup the Quick Look plugin.
+      You must start `#{appdir}/Quick Look NSIS.app` manually to setup the Quick Look plugin.
     EOS
   end
 end

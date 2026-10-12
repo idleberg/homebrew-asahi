@@ -1,9 +1,9 @@
 cask "quicklook-coder" do
-  version "0.1.0"
-  sha256 "4bbdb3e3cf9736e6a0f865e151d0e02185d42468267e0c91e4a9c7b9b9e0c530"
+  version "0.1.1"
+  sha256 "68de7a51540657ec2c7de890ee74659e5e6975a0a612e905c6c7e8480742eb3b"
 
   url "https://github.com/idleberg/quicklook-coder/releases/download/v#{version}/QuickLook-Dev-v#{version}.zip"
-  name "QuickLook Dev"
+  name "Quick Look Dev"
   desc "Quick Look plugin for developers, highlights languages supported by Twinklepop"
   homepage "https://github.com/idleberg/quicklook-coder/"
 
@@ -14,11 +14,11 @@ cask "quicklook-coder" do
 
   depends_on macos: :sonoma
 
-  app "QuickLook Dev.app"
+  app "Quick Look Dev.app"
 
   postflight_steps do
-    run "/usr/bin/xattr", args:           ["-dr", "com.apple.quarantine", "{{appdir}}/QuickLook Dev.app"],
-                          writable_paths: ["{{appdir}}/QuickLook Dev.app"]
+    run "/usr/bin/xattr", args:           ["-dr", "com.apple.quarantine", "{{appdir}}/Quick Look Dev.app"],
+                          writable_paths: ["{{appdir}}/Quick Look Dev.app"]
   end
 
   uninstall quit: "com.idleberg.QuickLookDev"
@@ -32,7 +32,7 @@ cask "quicklook-coder" do
 
   caveats do
     <<~EOS
-      You must start `#{appdir}/QuickLook Dev.app` manually to setup the Quick Look plugin.
+      You must start `#{appdir}/Quick Look Dev.app` manually to setup the Quick Look plugin.
     EOS
   end
 end
