@@ -45,9 +45,9 @@ $ brew install --cask <cask>
 - [Dent Desktop](https://github.com/idleberg/dent-desktop): Desktop application for dent, the opinionated NSIS code formatter
 - [Diznfo](https://github.com/idleberg/quicklook-nfo): Modern, configurable viewer and Quicklook plugin for NFO/DIZ files
 - [io](https://github.com/idleberg/io): Menu bar utility that routes audio
-- [QuickLook Dev](https://github.com/idleberg/quicklook-nsis): QuickLook plugin for developers
-- [QuickLook NSIS](https://github.com/idleberg/quicklook-nsis): QuickLook preview for NSIS scripts
-- [QuickLook Svelte](https://github.com/idleberg/quicklook-svelte): QuickLook preview for Svelte components
+- [Quick Look Dev](https://github.com/idleberg/quicklook-nsis): Quick Look plugin for developers
+- [Quick Look NSIS](https://github.com/idleberg/quicklook-nsis): Quick Look preview for NSIS scripts
+- [Quick Look Svelte](https://github.com/idleberg/quicklook-svelte): Quick Look preview for Svelte components
 
 ### Formulae
 
