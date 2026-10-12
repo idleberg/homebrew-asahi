@@ -1,11 +1,11 @@
-cask "quicklook-dev" do
+cask "quicklook-coder" do
   version "0.1.0"
   sha256 "4bbdb3e3cf9736e6a0f865e151d0e02185d42468267e0c91e4a9c7b9b9e0c530"
 
-  url "https://github.com/idleberg/quicklook-dev/releases/download/v#{version}/QuickLook-Dev-v#{version}.zip"
+  url "https://github.com/idleberg/quicklook-coder/releases/download/v#{version}/QuickLook-Dev-v#{version}.zip"
   name "QuickLook Dev"
   desc "Quick Look plugin for developers, highlights languages supported by Twinklepop"
-  homepage "https://github.com/idleberg/quicklook-dev/"
+  homepage "https://github.com/idleberg/quicklook-coder/"
 
   livecheck do
     url :url
