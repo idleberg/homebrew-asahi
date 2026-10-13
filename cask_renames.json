@@ -1,3 +1,5 @@
 {
-  "io": "io-app"
+  "io": "io-app",
+  "quicklook-dev": "quicklook-coder",
+  "quicklook-nfo": "diznfo"
 }
