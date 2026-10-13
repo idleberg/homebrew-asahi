@@ -1,4 +1,4 @@
-cask "io" do
+cask "io-app" do
   arch arm: "arm64", intel: "x86_64"
 
   version "0.1.2"
