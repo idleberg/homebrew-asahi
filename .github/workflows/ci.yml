@@ -25,5 +25,4 @@ jobs:
       npm_config_min_release_age: 0
 
     steps:
-      # ponytail: tracks main until homebrew-tap-ci has a release tag
-      - uses: idleberg/homebrew-tap-ci@main
+      - uses: idleberg/homebrew-tap-ci@20f0479efc2b677f1f5d13b31198caa3087fa4cc # 0.1.0
