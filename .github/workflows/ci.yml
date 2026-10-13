@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+    paths: [".github/workflows/ci.yml", "Formula/**.rb", "Casks/**.rb"]
+  pull_request:
+    paths: [".github/workflows/ci.yml", "Formula/**.rb", "Casks/**.rb"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  ci:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-latest, ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+
+    env:
+      HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}
+      # dent installs from npm, whose release-age gate would reject fresh versions
+      npm_config_min_release_age: 0
+
+    steps:
+      # ponytail: tracks main until homebrew-tap-ci has a release tag
+      - uses: idleberg/homebrew-tap-ci@main
