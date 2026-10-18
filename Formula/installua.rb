@@ -1,8 +1,8 @@
 class Installua < Formula
   desc "Lua-shaped language that compiles to NSIS"
   homepage "https://github.com/idleberg/installua"
-  url "https://github.com/idleberg/installua/archive/refs/tags/v0.2.2.tar.gz"
-  sha256 "5116fb260a070e35c928764bf2a2efeeebba4d0dd3c7e895dda1864ade921b10"
+  url "https://github.com/idleberg/installua/archive/refs/tags/v0.3.0.tar.gz"
+  sha256 "4019a86887c524dad1c512ddd420261d11de3f90b31be8c97d8d20265bd14487"
   license "Apache-2.0"
   head "https://github.com/idleberg/installua.git", branch: "main"
 
