@@ -1,6 +1,6 @@
 cask "quicklook-svelte" do
-  version "0.1.2"
-  sha256 "6bb07583e29ac9a4af20f434bdaeb5d0a0828a8506649732b221f35e21d1d2d8"
+  version "0.2.0"
+  sha256 "5ff782e1f53e51b3589cbe08a3e5b61f44b6817f7e1b38aa7f2dbf345e0c442a"
 
   url "https://github.com/idleberg/quicklook-svelte/releases/download/v#{version}/Quick-Look-Svelte-v#{version}.zip"
   name "Quick Look Svelte"
