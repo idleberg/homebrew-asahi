@@ -1,6 +1,6 @@
 cask "quicklook-nsis" do
-  version "0.1.1"
-  sha256 "15d3d493f1056e1fc198380c765496f3b3315c4aa2cf7569a7d8ed922d294dfd"
+  version "0.2.0"
+  sha256 "30c553f4cc79b963eec7f88779bf90a25b3302c02abc997156b739811826647a"
 
   url "https://github.com/idleberg/quicklook-nsis/releases/download/v#{version}/Quick-Look-NSIS-v#{version}.zip"
   name "Quick Look NSIS"
