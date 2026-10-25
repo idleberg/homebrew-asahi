@@ -10,7 +10,7 @@ class Desmack < Formula
 
   def install
     system "cargo", "install", *std_cargo_args
-    generate_completions_from_executable(bin/"ardent", "--completions")
+    generate_completions_from_executable(bin/"desmack", "--completions")
   end
 
   test do
