@@ -1,6 +1,6 @@
 # :beer: homebrew-asahi
 
-> Unified tap to distribute my apps (and some others) on Homebrew.
+> Unified tap to distribute my own apps and some third-parties not available on Homebrew.
 
 [![License](https://img.shields.io/github/license/idleberg/homebrew-asahi?color=blue&style=for-the-badge)](LICENSE)
 [![Build](https://img.shields.io/github/actions/workflow/status/idleberg/homebrew-asahi/ci.yml?style=for-the-badge)](https://github.com/idleberg/homebrew-asahi/actions)
