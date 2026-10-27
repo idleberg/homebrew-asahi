@@ -1,8 +1,8 @@
 cask "quicklook-coder" do
-  version "0.2.0"
-  sha256 "ccd7595934c4f8dd5b26deebaeade55c4f8414a8dc769c80102cfd3bd1098bac"
+  version "0.3.0"
+  sha256 "4cee6eed52d1ba7418a46a48966ffce26ef51da6af55b14c05b7ea09580273d0"
 
-  url "https://github.com/idleberg/quicklook-coder/releases/download/v#{version}/Quick-Look-Coder-v#{version}.zip"
+  url "https://github.com/idleberg/quicklook-coder/releases/download/v#{version}/Quick-Look-Coder-v#{version}-macos.zip"
   name "Quick Look Coder"
   desc "Quick Look plugin for developers, highlights languages supported by Twinklepop"
   homepage "https://github.com/idleberg/quicklook-coder/"
