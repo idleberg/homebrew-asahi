@@ -9,6 +9,6 @@ Previous versions of this tap contained bottles that have since been removed or 
 - `nixfmt` => [New Formula](https://formulae.brew.sh/formula/nixfmt)
 - `NormCap` => removed
 - `scdl` => [New Formula](https://formulae.brew.sh/formula/scdl)
-- `quicklook-nsis` => `brew install idleberg/asahi/quicklook-coder`
-- `quicklook-svelte` => `brew install idleberg/asahi/quicklook-coder`
+- `quicklook-nsis` => Use [`quicklook-coder`](/Casks/quicklook-coder.rb) instead
+- `quicklook-svelte` => Use [`quicklook-coder`](/Casks/quicklook-coder.rb) instead
 - `tgrep` => [New Formula](https://formulae.brew.sh/formula/tgrep)
