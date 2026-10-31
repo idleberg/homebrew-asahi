@@ -46,6 +46,7 @@ $ brew install --cask <cask>
 - [Diznfo](https://github.com/idleberg/quicklook-nfo): Modern, configurable viewer and Quicklook plugin for NFO/DIZ files
 - [io](https://github.com/idleberg/io): Menu bar utility that routes audio
 - [Quick Look Dev](https://github.com/idleberg/quicklook-nsis): Quick Look plugin for developers
+- [Rinse M8](https://github.com/idleberg/rinse-m8): Browse, download and listen to on-demand episodes from rinse.fm
 
 ### Formulae
 
