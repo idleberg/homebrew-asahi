@@ -1,6 +1,6 @@
 cask "rinse-m8" do
-  version "0.6.0"
-  sha256 "1c5ca00326cd52ebe0d6eca87d590d58e63eec00ce90484d897a270d1d8a0d0f"
+  version "0.6.1"
+  sha256 "c37ef48feebc85ac30df2af266ff774da3a956b6c65f889736fd136adc80e710"
 
   url "https://github.com/idleberg/rinse-m8/releases/download/v#{version}/Rinse-M8_#{version}_universal.dmg"
   name "Rinse M8"
