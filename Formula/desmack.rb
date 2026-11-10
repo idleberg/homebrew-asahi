@@ -1,8 +1,8 @@
 class Desmack < Formula
   desc "Extracts the assets of a Super Mario Kart SNES ROM"
   homepage "https://github.com/idleberg/desmack"
-  url "https://github.com/idleberg/desmack/archive/refs/tags/v0.3.0.tar.gz"
-  sha256 "247618a6d4e14c6bfbe448e8a373193c8ce27aa74a753b62d20a6027626648fe"
+  url "https://github.com/idleberg/desmack/archive/refs/tags/v0.3.1.tar.gz"
+  sha256 "73b603c61e281551946b1598a83d48f49f391370908899b8970ffe8ee69e122b"
   license any_of: ["Apache-2.0", "MIT"]
   head "https://github.com/idleberg/desmack.git", branch: "main"
 
