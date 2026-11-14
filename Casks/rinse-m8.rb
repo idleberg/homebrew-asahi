@@ -1,9 +1,9 @@
 cask "rinse-m8" do
   arch arm: "aarch64", intel: "x64"
 
-  version "0.19.1"
-  sha256 arm:   "3364b4702adf3819c14e8dd8b4d8c6e070fa4fad74600c0de5127d8ba7cf94bc",
-         intel: "3aecc3ea80889fb677a7072544557457b38a44ed2dcd6b5f6d966df3506bc676"
+  version "0.19.2"
+  sha256 arm:   "d365a0eb79a6478bd3fe72a9ca1ca1c722655d9d82dace7fda434e4ea9469774",
+         intel: "c2e9dd04480b8a6914b56fdd16df1a9e3510edfa3a79325286bd4d75e577f058"
 
   url "https://github.com/idleberg/rinse-m8/releases/download/v#{version}/Rinse-M8_#{version}_#{arch}.dmg"
   name "Rinse M8"
