@@ -1,7 +1,7 @@
 cask "rinse-m8" do
   arch arm: "aarch64", intel: "x64"
 
-  version "0.23.4"
+  version "0.23.3"
   sha256 arm:   "782701dd293270c38972e738e9755e628bbc9d45aa10413fe3fac5e6884e91b7",
          intel: "96f945b1f73f67ca513e4f113c333d71ec0b1dee2f9d5cd49fb58d31bae61ac7"
 
